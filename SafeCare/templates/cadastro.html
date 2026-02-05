@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - SafeCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h2>Cadastro</h2>
+
+<form method="POST">
+    <input type="text" name="nome" placeholder="Nome completo" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+
+    <select name="perfil" required>
+        <option value="">Selecione o perfil</option>
+        <option value="cuidador">Cuidador</option>
+        <option value="familiar">Familiar</option>
+    </select>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+</body>
+</html>
